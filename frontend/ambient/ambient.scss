@@ -1,0 +1,76 @@
+/*!
+ * Isomer - The distributed application framework
+ * ==============================================
+ * Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+@import '~scss/colors';
+
+#loopMixer {
+  display: inline-flex;
+  width: 100%;
+  position: relative;
+}
+
+#loopMixerFaders {
+  display: inline-flex;
+  max-width: 80vw;
+  min-width: 80vw;
+  overflow-x: auto;
+}
+
+.loopSlider {
+  display: -moz-inline-box;
+  text-align: center;
+}
+
+.loopSliderFader {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+}
+
+.loopSliderMaster {
+  position: absolute;
+  right: 0;
+
+  .loopSliderFader {
+    background: $color-gray-dark;
+  }
+}
+
+#loopLegend {
+  padding-top: 25px;
+}
+
+.loopLegendEntry {
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+}
+
+.loopLegendEntryText {
+}
+
+.knob-balance {
+  width: 34px;
+  display: inherit;
+}
+
+.btn-mute {
+  line-height: 1;
+  padding: 10px;
+  width: 2.5em;
+}
